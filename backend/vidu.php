@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <?php include_once __DIR__ . '/layout/meta.php'; ?>
+
+    <!-- sử dụng cho toàn hệ thống -->
+    <?php include_once __DIR__ . '/layout/styles.php'; ?>
 
     <style>
         div {
@@ -16,10 +19,7 @@
 </head>
 <body>
     <!-- header start -->
-    <?php
-    include_once __DIR__ . '/layout/partials/header.php';
-    
-    ?>
+    <?php include_once __DIR__ . '/layout/partials/header.php'; ?>
    <!--    Header end -->
 
 
@@ -27,7 +27,7 @@
    <div class="container-fluid">
        <div class="row">
             <!-- sider star -->
-    <?php include_once __DIR__ . '/layout/partials/slider.php' ?>
+    <?php include_once __DIR__ . '/layout/partials/sliderbar.php'; ?>
            <!-- sider end -->
 
            <!-- main star -->
@@ -40,7 +40,7 @@
 
        <!-- footer start -->
        <div class="row">
-       <?php include_once __DIR__ . '/layout/partials/footer.php' ?>
+       <?php include_once __DIR__ . '/layout/partials/footer.php'; ?>
        </div>
        <!-- footer end -->
    </div>
@@ -48,6 +48,8 @@
 
 <!-- JS sử dụng cho toàn hệ thống -->
 <?php include_once __DIR__ . '/layout/scripts.php'; ?>
+
+
 
 
 
